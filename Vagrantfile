@@ -15,7 +15,7 @@ Vagrant.configure(2) do |config|
   end
 
 config.vm.provision :shell, inline: <<-SHELL
-    cd /home/vagrant/ && wget http://www-eu.apache.org/dist//activemq/5.14.1/apache-activemq-5.14.1-bin.tar.gz
+    cd /home/vagrant/ && wget https://archive.apache.org/dist/activemq/5.14.1/apache-activemq-5.14.1-bin.tar.gz
     cd /home/vagrant/ && tar -zxvf apache-activemq-5.14.1-bin.tar.gz
     cd /home/vagrant/apache-activemq-5.14.1/bin && chmod 755 activemq
     sudo apt-get update
