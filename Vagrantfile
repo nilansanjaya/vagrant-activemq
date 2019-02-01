@@ -20,7 +20,7 @@ config.vm.provision :shell, inline: <<-SHELL
     cd /home/vagrant/apache-activemq-5.15.8/bin && chmod 755 activemq
     sudo apt-get update
     sudo apt-get install default-jdk -y
-    echo 'JAVA_HOME="/usr/lib/jvm/java-7-openjdk-i386/"' | sudo tee -a /etc/environment
+    echo 'JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"' | sudo tee -a /etc/environment
     source /etc/environment
     cd /home/vagrant/apache-activemq-5.15.8/bin && sudo sh activemq start
   SHELL
